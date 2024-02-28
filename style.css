@@ -40,3 +40,59 @@ body{
     background-color: rgb(52, 8, 61);
     /* background-color: hsl(240, 100%, 50%); */
 }
+
+#textcontainer{
+    text-align: center;
+    text-indent: 13px;
+}
+#textbutton{
+    text-align: center;
+}
+.field{
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: beige;
+    background-color: hsl(240, 100%, 50%);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.35s;
+    outline: auto;
+    outline-style: solid;
+    outline-width: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 40px #571186;
+    background: #571186;
+    transition: background-color .3s ease;
+}
+.button{
+    padding: 20px 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: beige;
+    background-color: hsl(240, 100%, 50%);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.35s;
+    outline: auto;
+    outline-style: solid;
+    outline-width: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 40px #571186;
+    background: #571186;
+    transition: background-color .3s ease;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}  
+#abutton{
+    display: block;
+    text-align: center;
+    text-indent: 13px;
+}
