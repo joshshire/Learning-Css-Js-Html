@@ -24,6 +24,9 @@ const resetBtn = document.getElementById('resetBtn');
 const increaseBtn = document.getElementById('increaseBtn');
 const increase10 = document.getElementById('Increase10Btn')
 const decrease10 = document.getElementById('Decrease10Btn')
+const Increasetext = document.getElementById('increasefield')
+const Decreasetext = document.getElementById('decreasefield')
+const Button = document.getElementById('textbutton')
 let countLabel = document.getElementById('count')
 let count = 0;
 decreaseBtn.onclick = function(){
@@ -45,4 +48,17 @@ increase10.onclick = function(){
 decrease10.onclick = function(){
     count -= 10;
     countLabel.textContent = count;
+};
+Button.onclick = function(){
+    if (Boolean(Increasetext.value)){
+        console.log((Boolean(Increasetext.value)))
+        count += Number(Increasetext.value);
+        countLabel.textContent = count;
+        Increasetext.value = '';
+
+    }else{
+        count -= Number(Decreasetext.value);
+        countLabel.textContent = count;
+        Decreasetext.value = '';   
+};
 };
