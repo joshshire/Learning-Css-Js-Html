@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blur-overlay" id="blur">
+        <div id="hints">
+            <label class="Hints">Hints:</label>
+            <button class="Hints" id="firsthint">Hint 1</button>
+            <button class="Hints" id="secondhint">Hint 2 </button>
+            <button class="Hints" id="thirdhint">Hint 3</button>
+        </div>
+        <div id="TextContainer">
+            <label id="count">Guess a number between 1 and 100</label><br>
+            <label id="Guesses">You have 3 Guesses left</label><br>
+            <label id="Hint"></label>
+        </div>
+    <div id='Btncontainer'>
+        <input type="text" placeholder="Your guess" id="Guess" class="field"></input>
+        <input type="button" value="submit" class="buttons" id="textbutton"></input>
+        <input type="button" value="Restart" class="buttons" id="restartbutton"></input>
+    </div>
+    <div id="GuessHistory">
+        <label id="item1" class="GuessCLass">Guess 1:</label>
+        <label id="item2" class="GuessCLass">Guess 2:</label>
+        <label id="item3" class="GuessCLass">Guess 3:</label>
+        <label id="item4" class="GuessCLass">Guess 4:</label>
+    </div>
+    </div>
+    <div class="popup" id="popup">
+        <input type="image" src="404-tick.png" id="Check">
+        <h1 id="Odd/Even/Label"></h1>
+        <h2 id="Odd/Even"></h2>
+    </div>
+    <!-- <img src="Untitled.png" alt=""> -->
+    <script src="script.js"></script>
+</body>
+</html>
