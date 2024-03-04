@@ -1,0 +1,254 @@
+body{
+    background: linear-gradient(to right, #0b061f, #1A0E4A) ;
+}
+
+.blur-overlay#blur.active{
+    position: relative;
+    display: flex;
+    filter: blur(6px);
+}
+#TextContainer{
+    position: absolute;
+    position: fixed; 
+    display: block;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    text-align: center; /* Need a specific value to work */
+    font-size: 4em;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#TextContainer.active{
+    position: absolute;
+    position: fixed; 
+    display: block;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    text-align: center; /* Need a specific value to work */
+    font-size: 4em;
+    color: rgb(255, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Btncontainer{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+#Btncontainer.active{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 113%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#GuessHistory{
+    float: left;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#GuessHistory .GuessCLass {
+    display: block; /* Change to block-level */
+    margin-bottom: 40px;
+    font-size: 4em;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 0 40px#571186;
+    padding: 5px;
+    background-color: #571186;
+    border-radius: 25px;
+}
+.buttons{
+    margin-right: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: beige;
+    background-color: hsl(240, 100%, 50%);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.35s;
+    outline: auto;
+    outline-style: solid;
+    outline-width: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 40px #571186;
+    background: #571186;
+    transition: background-color .3s ease;
+}
+.buttons:hover{
+    background-color: hsl(240, 60%, 22%);
+}
+.buttons:active{
+    background-color: rgb(52, 8, 61);
+}
+
+.field{
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: beige;
+    background-color: hsl(240, 100%, 50%);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.35s;
+    outline-style: solid;
+    outline-width: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 40px #571186;
+    background: #571186;
+    transition: background-color .3s ease;
+}
+.field:hover{
+    background-color: hsl(240, 60%, 22%);
+}
+.button{
+    padding: 20px 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-items: center;
+    font-size: 1.5em;
+    color: beige;
+    background-color: hsl(240, 100%, 50%);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.35s;
+    outline: auto;
+    outline-style: solid;
+    outline-width: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 40px #571186;
+    background: #571186;
+    transition: background-color .3s ease;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}  
+#abutton{
+    display: block;
+    text-align: center;
+    text-indent: 13px;
+}
+#hints{
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 25px;
+}
+.Hints{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    font-size: 4em;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    box-shadow: 0 0 40px#571186;
+    padding: 5px;
+    background-color: #571186;
+    border-radius: 25px;
+}
+#hints.ThirdHint{
+    position: absolute;
+    margin-bottom: 10px;
+    top: 10%;
+    left: 50%;
+    text-align: center;
+    border-radius: 25px;
+}
+#hints.Gameover{
+    position: absolute;
+    margin-bottom: 10px;
+    top: 10%;
+    left: 50%;
+    text-align: center;
+    border-radius: 25px;
+}
+#hints.active{
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 25px;
+}
+.Hints:hover{
+    background-color: hsl(240, 60%, 22%);
+    cursor: pointer;
+}
+.popup{
+    width: 800px;
+    height: 400px;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    outline: white;
+    border-radius: 12px;
+    outline-style: solid;
+    outline-width: 4px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    opacity: .85;
+}
+.open-popup{
+    visibility: visible;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+}
+.popup input{
+    position: relative;
+    width: 100px;
+    margin-top: -64px;
+    right: -430px;
+    bottom: -5px;
+    scale: 0.55;
+    border-radius: 50%;
+    outline: white;
+    outline-width: 6px;
+    outline-style: solid;
+}
+.popup h1{
+    font-size: 3em;
+    color: aliceblue;
+}
+.popup h2{
+    display: block;
+    word-wrap: break-word;
+    margin-top: 80px;
+    width: 800px;
+    color: aliceblue;
+    position: relative;
+    top: -70px;
+}
