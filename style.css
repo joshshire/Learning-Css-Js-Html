@@ -4,7 +4,7 @@ body{
 #CompanyName{
     position: absolute;
     font-family: "Arial Black";
-    line-height: 15px;
+    line-height: 7vh;
     top: 15%;
     left: 50%;
     color: #1B3454;;
@@ -27,7 +27,7 @@ body{
 #CompanyAddress{
     color: #1B3454;
     position: absolute;
-    top: 25%;
+    top: 30vh;
     left: 50%;
     color: #1B3454;;
     transform: translate(-50%, -50%);
@@ -35,7 +35,7 @@ body{
 #CompanyNum{
     position: absolute;
     color: #1B3454;
-    top: 30%;
+    top: 35vh;
     left: 50%;
     color: #1B3454;;
     transform: translate(-50%, -50%);
@@ -47,7 +47,7 @@ body{
 #CompanyEmail{
     position: absolute;
     color: #1B3454;
-    top: 35%;
+    top: 40vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
